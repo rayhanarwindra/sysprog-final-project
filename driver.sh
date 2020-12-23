@@ -17,7 +17,7 @@ mainmenu() {
     echo '================================================='
     echo '                    MAIN MENU                    '
     echo '================================================='
-    echo CURRENT MOUSE RESOLUTION (IN DPI)
+    echo CURRENT MOUSE RESOLUTION
     echo resolution: $(cat /sys/module/psmouse/parameters/resolution)
 
     COLUMNS=12
