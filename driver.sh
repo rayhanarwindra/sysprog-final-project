@@ -20,24 +20,24 @@ mainmenu() {
     echo '================================================='
     echo '                    MAIN MENU                    '
     echo '================================================='
-    echo CURRENT PSMOUSE STATUS
+    echo CURRENT MOUSE RESOLUTION (IN DPI)
     echo resolution: $(cat /sys/module/psmouse/parameters/resolution)
 
     COLUMNS=12
     PS3='choose driver to configure 1-2: '
-    options=("Psmouse" "Exit")
+    options=("Change Resolution" "Exit Script")
     select opt in "${options[@]}"
     do
         case $opt in
-            "Psmouse")
+            "Change Resolution")
                 changeres
                 ;;
-            "Exit")
-                echo 'Bye Bye...'
+            "Exit Script")
+                echo 'Exiting Script'
                 read -p 'Press [Enter] key to continue...'
                 exit
                 ;;
-            *) echo "invalid option $REPLY";;
+            *)
         esac
     done
 }
