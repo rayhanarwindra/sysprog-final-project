@@ -19,7 +19,7 @@ changecb() {
     	echo $PASSWORD | sudo -S modprobe e1000 copybreak=$cb
     	echo The ethernet copybreak is now: $(cat /sys/module/e1000/parameters/copybreak)
     	read -p 'Press [Enter] key to continue...'
-
+	mainmenu
 }
 
 mainmenu() {
