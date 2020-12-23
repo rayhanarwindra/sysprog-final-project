@@ -5,9 +5,6 @@
 PASSWORD=sysprog2019
 
 changeres() {
-    echo '-------------------------------------------------'
-    echo '                    PSMOUSE                      '
-    echo '-------------------------------------------------'
     read -p 'Resolution (in dpi): ' res
     echo $PASSWORD | sudo -S modprobe -r psmouse
     echo $PASSWORD | sudo -S modprobe psmouse resolution=$res
