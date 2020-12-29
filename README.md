@@ -9,7 +9,7 @@
 ### Task
 #### Low-tier Category
 - [x] Compile and apply your custom kernel to existing Linux OS (Included in Worksheet)
-- [x]Creating a simple script to simulate the usage of Device Driver (Included in Worksheet)
+- [x] Creating a simple script to simulate the usage of Device Driver (Included in Worksheet)
 
 #### Mid-tier Category
 - [x] Remove unused kernel modules
