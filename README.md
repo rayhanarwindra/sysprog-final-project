@@ -22,7 +22,7 @@
 
 #### Documentation
 - [Progress](https://docs.google.com/spreadsheets/d/1cp-NusY-GEChxett3vuphKv9iJlGm1zdw3UTWr5BVzE/edit?usp=sharing)
-- Artifact: soon
+- [Artifacts](https://drive.google.com/drive/u/1/folders/1LRFFlWTRxwhRi2HtoFU6U6BRAID81ICJ)
 - Final Report: soon
 
 ### Instructions
