@@ -1,10 +1,10 @@
-## System Programming Final Project
+# System Programming Final Project
 ### Group: PID Wilson
 - I Made Gede Surya Nirvana Prima Murthi (1806173550)
 - Wan Muhammad Rayhan Arwindra (1806241210)
 - Wilson Hadi Junior (1806241236)
 
-### Project Description
+## Project Description
 
 ### Task
 #### Low-tier Category
