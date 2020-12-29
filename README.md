@@ -24,3 +24,10 @@
 - [Progress](https://docs.google.com/spreadsheets/d/1cp-NusY-GEChxett3vuphKv9iJlGm1zdw3UTWr5BVzE/edit?usp=sharing)
 - Artifact: soon
 - Final Report: soon
+
+### Instructions
+
+1. Run driver.sh bash script
+2. Choose (1-2) which device driver parameters to manipulate
+3. Enter new value for chosen device driver parameter
+4. Choose option 3 to exit script
