@@ -23,17 +23,15 @@ changecb() {
 }
 
 mainmenu() {
+
     echo '================================================='
-    echo '                    MAIN MENU                    '
+    echo Current Mouse Resolution: $(cat /sys/module/psmouse/parameters/resolution)
     echo '================================================='
-    echo CURRENT MOUSE RESOLUTION
-    echo resolution: $(cat /sys/module/psmouse/parameters/resolution)
+    echo Current Ethernet Copybreak: $(cat /sys/module/e1000/parameters/copybreak)
     echo '================================================='
-    echo CURRENT NETWORK COPYBREAK
-    echo copybreak: $(cat /sys/module/e1000/parameters/copybreak)
 
     COLUMNS=12
-    PS3='choose driver to configure 1-2: '
+    PS3='Choose which parameter you wish to reconfigure: '
     options=("Change Resolution" "Change CopyBreak" "Exit Script")
     select opt in "${options[@]}"
     do
