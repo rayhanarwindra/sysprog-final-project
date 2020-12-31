@@ -1,6 +1,6 @@
 # !/bin/bash
 # conf.sh
-# FOR: configuring linux device driver psmouse
+# FOR: Changing psmouse resolution and e1000 copybreak
 
 PASSWORD=sysprog2019
 
