@@ -13,6 +13,16 @@ changeres() {
     mainmenu
 }
 
+changerate() {
+    echo 'Rate is how many reports to the computer in seconds'
+    read -p 'New rate (in seconds): ' rate
+    echo $PASSWORD | sudo -S modprobe -r psmouse
+    echo $PASSWORD | sudo -S modprobe psmouse rate=$rate
+    echo The resolution of the mouse is now: $(cat /sys/module/psmouse/parameters/rate)
+    read -p 'Press [Enter] key to continue...'
+    mainmenu
+}
+
 changecb() {
 	read -p 'New Copybreak value: ' cb
 	echo $PASSWORD | sudo -S modprobe -r e1000
@@ -27,17 +37,22 @@ mainmenu() {
     echo '================================================='
     echo Current Mouse Resolution: $(cat /sys/module/psmouse/parameters/resolution)
     echo '================================================='
+    echo Current Mouse Rate: $(cat /sys/module/psmouse/parameters/rate)
+    echo '================================================='
     echo Current Ethernet Copybreak: $(cat /sys/module/e1000/parameters/copybreak)
     echo '================================================='
 
     COLUMNS=12
     PS3='Choose which parameter you wish to reconfigure: '
-    options=("Change Resolution" "Change CopyBreak" "Exit Script")
+    options=("Change Mouse Resolution" "Change Mouse Rate" "Change CopyBreak" "Exit Script")
     select opt in "${options[@]}"
     do
         case $opt in
-            "Change Resolution")
+            "Change Mouse Resolution")
                 changeres
+                ;;
+            "Change Mouse Rate")
+                changerate
                 ;;
 	    "Change CopyBreak")
 		changecb
